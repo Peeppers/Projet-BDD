@@ -1,9 +1,9 @@
 <?php
-  //Schwing Lucas
+	//Schwing Lucas
 	//Porcu Baptiste
   // Parametres de configuration de la connexion
   // -> permet de porter l'application en ne modifiant qu'une seule fois
-  //	les paramÃ¨tres de connexions Ã  un serveur MySQL 
+  //	les paramètres de connexions à un serveur MySQL 
 
   $host="localhost";
   $user="root";

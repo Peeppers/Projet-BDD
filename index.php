@@ -9,15 +9,13 @@
 	</head>
 	<body>
 	<div class="header">
-  <h1>Parking résidence Arborea</h1>
-  <p>Parking de 20 places</p>
+		<h1>Bienvenue</h1>
     </div>
 
 <div class="navbar">
   <a href="#">Accueil</a>
   <a onclick="document.getElementById('id01').style.display='block'" checked="checked">Connexion</button></a>
   <a <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">S'inscrire</button></a>
-  <a href="information.html">Information</a>
   <a href="Setup.php">Initialisation bases de donnée</a>
 </div>
 
@@ -40,8 +38,8 @@
     </div>
 
     <div class="container">
-      <label for="uname"><b>Nom d'utilisateur</b></label>
-      <input type="text" placeholder="Entrez nom d'utilisateur" name="uname" required>
+      <label for="uname"><b>Adresse Mail</b></label>
+      <input type="text" placeholder="Entrez adresse mail" name="uname" required>
 
       <label for="psw"><b>Mot de passe</b></label>
       <input type="password" placeholder="Entrez le mot de passe" name="pswCo" required>
@@ -54,7 +52,7 @@
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnCo">Annuler</button>
-      <span class="psw">Mot de passe <a href="#">oublié ?</a></span>
+      <span class="psw"><a href="#">Mot de passe oublié ?</a></span>
     </div>
   </form>
 </div>

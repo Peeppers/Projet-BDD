@@ -3,7 +3,8 @@
 	//Porcu Baptiste
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=parking;charset=utf8', 'root', '');
+	include("parametres.php");
+	$bdd = new PDO('mysql:host='. $host .';dbname='. $base .';charset=utf8', $user, $pass);
 	$bdd->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	
 	$email = htmlspecialchars(trim($_POST['email']));
@@ -29,10 +30,10 @@ try
                 // On crypte le mot de passe
                 $password= md5($password);
                 // on se connecte à MySQL et on sélectionne la base
-                $bdd = new PDO('mysql:host=localhost;dbname=parking;charset=utf8', 'root', '');
+                $bdd = new PDO('mysql:host='. $host .';dbname='. $base .';charset=utf8', $user, $pass);
                 //On créé la requête
-                $requete = "INSERT INTO abonnes (adresseAbonnes, adresseMail, codePostalAbonnes, immatriculationAbonnes, nomAbonne, prenomAbonne, ibanAbonne, telephoneAbonne, mdpAbonne) 
-									VALUES ('$adresse', '$email', '$codePostal', '$immatriculationAbonne', '$Nom', '$Prenom', '$iban', '$telephone', '$password');";
+                $requete = "INSERT INTO abonnes (adresseAbonnes, adresseMail, codePostalAbonnes, immatriculationAbonnes, nomAbonne, prenomAbonne, ibanAbonne, telephoneAbonne, mdpAbonne, id_parking) 
+									VALUES ('$adresse', '$email', '$codePostal', '$immatriculationAbonne', '$Nom', '$Prenom', '$iban', '$telephone', '$password', 0);";
                 
 				/* execute et affiche l'erreur mysql si elle se produit */
 				if(($bdd->query($requete))==TRUE)
