@@ -1,4 +1,6 @@
 <?php 
+//Schwing Lucas
+//Porcu Baptiste
 session_start();
 class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
