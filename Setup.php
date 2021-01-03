@@ -1,10 +1,12 @@
 <?php
+  //Schwing Lucas
+	//Porcu Baptiste
   include("Parametres.php");
   $id=mysqli_connect($host,$user,$pass);
   $resultat=mysqli_query($id, "DROP DATABASE IF EXISTS $base");
   $resultat=mysqli_query($id, "CREATE DATABASE $base");
   mysqli_select_db($id, $base)
-  or die("Impossible de sélectionner la base : $base");
+  or die("Impossible de sÃ©lectionner la base : $base");
 
   $resultat=mysqli_query($id, "CREATE TABLE IF NOT EXISTS `abonnes` (
   `idAbonnes` int(11) NOT NULL AUTO_INCREMENT,
