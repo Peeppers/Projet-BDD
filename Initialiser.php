@@ -1,4 +1,6 @@
 <?php
+  //Schwing Lucas
+  //Porcu Baptiste
   include("Parametres.php");
  
   // Connexion au serveur MySQL
