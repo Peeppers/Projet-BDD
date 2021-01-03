@@ -1,5 +1,6 @@
 <?php
-
+	//Schwing Lucas
+	//Porcu Baptiste
 try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=parking;charset=utf8', 'root', '');
