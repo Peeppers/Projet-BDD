@@ -1,6 +1,6 @@
 <?php
   //Schwing Lucas
-	//Porcu Baptiste
+  //Porcu Baptiste
   include("Parametres.php");
   $id=mysqli_connect($host,$user,$pass);
   $resultat=mysqli_query($id, "DROP DATABASE IF EXISTS $base");
